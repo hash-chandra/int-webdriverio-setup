@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-import { expect, $} from '@wdio/globals';
+import { expect } from '@wdio/globals';
 import {login, openLoginPage } from '../pageObjects/loginPage.js';
 import getFlashAlert from '../pageObjects/secure.page.js';
 

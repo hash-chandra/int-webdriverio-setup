@@ -1,7 +1,7 @@
 {
   "name": "int-webdriverio-setup",
   "version": "1.0.0",
-  "description": "Basic WebdriverIO code - plug n play",
+  "description": "Boilerplate WebdriverIO code - plug n play",
   "author": "Chandrashekhar Ch",
   "type": "module",
   "scripts": {
