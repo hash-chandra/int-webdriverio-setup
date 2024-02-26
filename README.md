@@ -38,8 +38,8 @@ npm install
 In order to run the end-to-end WebdriverIO tests locally follow these steps:
 
 ```bash 
-Chrome browser                          `npm run test:chrome`   
-Firefox browser                         `npm run test:firefox`   
-BrowserStack Web Safari browser         `npm run test:bs:safari`   
-BrowserStack Mobile Iphone browser      `npm run test:bs:ios`    
+Chrome browser                          npm run test:chrome   
+Firefox browser                         npm run test:firefox  
+BrowserStack Web Safari browser         npm run test:bs:safari  
+BrowserStack Mobile Iphone browser      npm run test:bs:ios  
 ```
