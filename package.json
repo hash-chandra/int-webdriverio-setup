@@ -5,7 +5,8 @@
   "author": "Chandrashekhar Ch",
   "type": "module",
   "scripts": {
-    "test:chrome": "wdio run conf/wdio.conf.desktop.local.chrome.js"
+    "test:chrome": "wdio run conf/wdio.conf.desktop.local.chrome.js",
+    "test:firefox": "wdio run conf/wdio.conf.desktop.local.firefox.js"
   },
   "license": "ISC",
   "devDependencies": {
