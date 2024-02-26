@@ -2,5 +2,5 @@
 
 Plug and Play of WebdriverIO code
 
-Run using
-`npm run wdio`  
+To run the tests in 
+Chrome browser use `npm run test:chrome`  
