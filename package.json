@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test:chrome": "wdio run conf/wdio.conf.desktop.local.chrome.js",
-    "test:firefox": "wdio run conf/wdio.conf.desktop.local.firefox.js"
+    "test:firefox": "wdio run conf/wdio.conf.desktop.local.firefox.js",
+    "test:bs:safari": "wdio run conf/wdio.conf.browserstack.safari.js",
+    "test:bs:ios": "wdio run conf/wdio.conf.browserstack.ios.safari.js"
   },
   "license": "ISC",
   "devDependencies": {
@@ -17,5 +19,8 @@
     "@wdio/mocha-framework": "^8.32.3",
     "@wdio/spec-reporter": "^8.31.1",
     "wdio-wait-for": "^3.0.10"
+  },
+  "dependencies": {
+    "@wdio/browserstack-service": "^8.32.3"
   }
 }

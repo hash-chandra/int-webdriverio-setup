@@ -15,8 +15,7 @@ export const config = {
     ],
   path: '/',
   screenshotPath: null,
-  specs: ['../features/**/*.feature'],  //issue
-//  specs: [...configBase.specs],
+  specs: [...configBase.specs],
   // Level of logging verbosity: trace | debug | info | warn | error | silent
   logLevel: 'error',
   // The number of times to retry the entire spec file when it fails as a whole.
