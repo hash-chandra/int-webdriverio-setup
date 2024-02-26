@@ -26,7 +26,7 @@ npm install
 │   ├── /wdio.conf.desktop.local.firefox.js   # Local Firefox Driver config
 │   ├── /wdio.conf.browserstack.js            # BrowserStack Global file
 │   ├── /wdio.conf.browserstack.safari.js     # BrowserStack IOS Safari config
-│   ├── /wdio.conf.browserstack.ios.safari.js # BrowserStack IOS Safari config
+│   ├── /wdio.conf.browserstack.ios.safari.js # BrowserStack Web Safari config
 ├── /features/                                # Features folder
 ├── /pageObjects/                             # Page objects folder
 ├── /stepDefinitions/                         # Step Definitions folder
@@ -37,7 +37,7 @@ npm install
 
 In order to run the end-to-end WebdriverIO tests locally follow these steps:
 
-Chrome browser use `npm run test:chrome`  
-Firefox browser use `npm run test:firefox` 
-BrowserStack - Web Safari browser use `npm run test:bs:safari` 
-BrowserStack - Mobile Iphone browser use `npm run test:bs:ios`  
+Chrome browser use `npm run test:chrome`    
+Firefox browser use `npm run test:firefox`   
+BrowserStack - Web Safari browser use `npm run test:bs:safari`   
+BrowserStack - Mobile Iphone browser use `npm run test:bs:ios`    
