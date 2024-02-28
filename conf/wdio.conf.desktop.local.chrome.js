@@ -5,7 +5,6 @@ const name = 'chrome';
 export const config = {
   ...configBase,
   browserName: name,
-  browserVersion: '121.0',
   path: '/',
   capabilities: [
     {
