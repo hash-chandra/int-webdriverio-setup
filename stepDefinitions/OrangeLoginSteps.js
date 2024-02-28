@@ -7,7 +7,7 @@ Given(/^I am on the login page$/, async () => {
 });
 
 Then(/^I should see the Admin homepage$/, async () => {
-    await expect(isLoggedin()).toBeTruthy();
+    await expect(await isLoggedin()).toBeTruthy();
 });
 
 When('I login with {string} and {string}', async (username, password) => {

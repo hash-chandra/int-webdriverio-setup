@@ -1,14 +1,15 @@
 import openPage from './page.js';
 
 const locators = {  
-    dashboardLink: '//h6[normalize-space()=\'Dashboard\']',
-    username: 'input[placeholder=\'Username\']',
-    password: 'input[placeholder=\'Password\']',
-    loginBtn: 'button[type=\'submit\']'
+    dashboardLink: "//span[normalize-space()='Admin']",
+    username: "input[placeholder='Username']",
+    password: "input[placeholder='Password']",
+    loginBtn: "button[type='submit']"
 };
 
 async function isLoggedin() {
-    return await $(locators.dashboardLink).isDisplayed();
+    await $(locators.dashboardLink).waitForDisplayed();
+   return (await $(locators.dashboardLink)).isDisplayed();
 }
 
 async function openLoginPage() {
