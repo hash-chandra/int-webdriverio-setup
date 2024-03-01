@@ -9,7 +9,8 @@
     "test:firefox": "wdio run conf/wdio.conf.desktop.local.firefox.js",
     "test:bs:safari": "wdio run conf/wdio.conf.browserstack.safari.js",
     "test:bs:ios": "wdio run conf/wdio.conf.browserstack.ios.safari.js",
-    "allure-report": "allure generate allure-results --clean && allure open"
+    "allure-report": "allure generate allure-results --clean && allure open",
+    "test:visual": "wdio run conf/wdio.conf.visualregression.js"
   },
   "license": "ISC",
   "devDependencies": {
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "@wdio/browserstack-service": "^8.32.3",
-    "allure-commandline": "^2.27.0"
+    "allure-commandline": "^2.27.0",
+    "@wdio/visual-service":"3.1.0"
   }
 }
