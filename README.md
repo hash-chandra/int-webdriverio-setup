@@ -27,6 +27,7 @@ npm install
 │   ├── /wdio.conf.browserstack.js            # BrowserStack Global file
 │   ├── /wdio.conf.browserstack.safari.js     # BrowserStack IOS Safari config
 │   ├── /wdio.conf.browserstack.ios.safari.js # BrowserStack Web Safari config
+│   ├── /wdio.conf.visualregression.js        # Visual Regression config
 ├── /features/                                # Features folder
 ├── /pageObjects/                             # Page objects folder
 ├── /stepDefinitions/                         # Step Definitions folder
@@ -42,4 +43,13 @@ Chrome browser                          npm run test:chrome
 Firefox browser                         npm run test:firefox  
 BrowserStack Web Safari browser         npm run test:bs:safari  
 BrowserStack Mobile Iphone browser      npm run test:bs:ios  
+```
+
+### Visual Tests
+
+Using wdio visual service, we can compare the webpages, elements against baseline images
+
+To run visual tests
+```shell
+npm run test:visual
 ```
