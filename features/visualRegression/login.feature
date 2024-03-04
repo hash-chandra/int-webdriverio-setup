@@ -4,4 +4,3 @@ Feature: The Orange HRM Website
     Given I am on the login page
     When I login with "Admin" and "admin123"
     Then I should see the Admin homepage screen
-

@@ -24,11 +24,12 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        '../features/**/*.feature'
+        '../features/**/orangeLogin.feature',
+        '../features/**/addEmployee.feature'
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        '../features/visualRegression/*.feature'
     ],
     //
     // ============
@@ -73,7 +74,7 @@ export const config = {
     // - @wdio/local-runner
     // - @wdio/sumologic-reporter
     // - @wdio/cli, @wdio/config, @wdio/utils
-    // Level of logging verbosity: trace | debug | info | warn | error | silent
+   // Level of logging verbosity: trace | debug | info | warn | error | silent
     // logLevels: {
     //     webdriver: 'info',
     //     '@wdio/appium-service': 'info'

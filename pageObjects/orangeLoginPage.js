@@ -2,8 +2,8 @@ import openPage from './page.js';
 
 const locators = {  
     dashboardLink: "//span[normalize-space()='Admin']",
-    username: "input[placeholder='Username']",
-    password: "input[placeholder='Password']",
+    username: "input[placeholder='username']",
+    password: "input[placeholder='password']",
     loginBtn: "button[type='submit']"
 };
 
