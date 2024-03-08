@@ -2,7 +2,14 @@
 
 ## Installing/ Getting Started
 
+To set this WebdriverIO boilerplate project, you can follow these steps:
 Install the dependencies using `npm`:
+
+### Install Node.js and npm:
+ Make sure you have Node.js and npm installed on your machine. You can download and install them from the official Node.js website: Node.js.
+
+### Initialize a new Node.js project: 
+Open your terminal or command prompt and navigate to the directory where you want to create your project. Then, run the following command to install the required dependencies.
 
 ```shell
 npm install
@@ -34,7 +41,7 @@ npm install
 ├── /package.json                             # Framework dependencies
 ```
 
-## WebdriverIO Tests
+## Run your tests:
 
 In order to run the end-to-end WebdriverIO tests locally follow these steps:
 
