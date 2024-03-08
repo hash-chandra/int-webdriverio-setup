@@ -2,8 +2,7 @@
 
 ## Installing/ Getting Started
 
-To set this WebdriverIO boilerplate project, you can follow these steps:
-Install the dependencies using `npm`:
+To set this WebdriverIO boilerplate project, you can follow these steps
 
 ### Install Node.js and npm:
  Make sure you have Node.js and npm installed on your machine. You can download and install them from the official Node.js website: Node.js.
