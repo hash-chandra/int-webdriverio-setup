@@ -1,0 +1,13 @@
+name: E2E Tests
+on: [push, pull_request, workflow_dispatch]
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install dependencies
+              run: npm install
+            - name: Run Chrome tests
+              run: test:chrome
+            - name: Run Firefox tests
+              run: test:firefox
