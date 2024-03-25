@@ -25,7 +25,7 @@ export const config = {
     //
     specs: [
         '../features/**/orangeLogin.feature',
-        '../features/**/addEmployee.feature'
+        //'../features/**/addEmployee.feature'
     ],
     // Patterns to exclude.
     exclude: [

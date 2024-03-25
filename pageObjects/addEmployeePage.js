@@ -1,7 +1,7 @@
 const locators = {
     PIMLink: "//span[normalize-space()='PIM']",
     addButton: "//button[normalize-space()='Add']", // (//button[normalize-space()='Add'])[1]
-    firstNameInput: "input[placeholder='First name']",
+    firstNameInput: "input[placeholder='First Name']",
     lastNameInput: "input[placeholder='Last Name']",
     saveButton: "button[type='submit']",
     employeeLabel: '//input[@name=\'firstName\']',
