@@ -8,6 +8,6 @@ jobs:
             - name: Install dependencies
               run: npm install
             - name: Run Chrome tests
-              run: test:chrome
+              run: npm run test:chrome
             - name: Run Firefox tests
-              run: test:firefox
+              run: npm run test:firefox
