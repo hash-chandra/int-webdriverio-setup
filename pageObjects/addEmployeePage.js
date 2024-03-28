@@ -1,34 +1,27 @@
-const locators = {
-    PIMLink: "//span[normalize-space()='PIM']",
-    addButton: "//button[normalize-space()='Add']", // (//button[normalize-space()='Add'])[1]
-    firstNameInput: "input[placeholder='First Name']",
-    lastNameInput: "input[placeholder='Last Name']",
-    saveButton: "button[type='submit']",
-    employeeLabel: '//input[@name=\'firstName\']',
-};
+import data from './locators/allLocators.json' with {type:"json"};
 
 async function openPIM() {
-    await $(locators.PIMLink).waitForDisplayed();
-    await $(locators.PIMLink).click();
+    await $(data.addEmployee.PIMLink).waitForDisplayed();
+    await $(data.addEmployee.PIMLink).click();
 }
 
 async function clickAddButton() {
-    await $(locators.addButton).waitForDisplayed();
-    await $(locators.addButton).click();
+    await  $(data.addEmployee.addButton).waitForDisplayed();
+    await  $(data.addEmployee.addButton).click();
 }
 
 async function fillEmployeeDetails(firstName, LastName) {
-    await $(locators.firstNameInput).setValue(firstName);
-    await $(locators.lastNameInput).setValue(LastName);
+    await  $(data.addEmployee.firstNameInput).setValue(firstName);
+    await  $(data.addEmployee.lastNameInput).setValue(LastName);
 }
 
 async function submitDetails() {
-    await $(locators.saveButton).click();
+    await  $(data.addEmployee.saveButton).click();
 }
 
 async function isEmployeeAdded() {
-    await (await $(locators.employeeLabel)).waitForDisplayed();
-   return  await $(locators.employeeLabel).getValue();
+    await (await  $(data.addEmployee.employeeLabel)).waitForDisplayed();
+   return  await  $(data.addEmployee.employeeLabel).getValue();
 
 }
 

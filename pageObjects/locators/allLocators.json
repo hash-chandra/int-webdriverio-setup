@@ -1,0 +1,16 @@
+{
+    "addEmployee": {
+        "PIMLink": "//span[normalize-space()='PIM']",
+        "addButton": "//button[normalize-space()='Add']",
+        "firstNameInput": "input[placeholder='First Name']",
+        "lastNameInput": "input[placeholder='Last Name']",
+        "saveButton": "button[type='submit']",
+        "employeeLabel": "//input[@name='firstName']"
+    },
+    "orangeLogin": {
+        "dashboardLink": "//span[normalize-space()='Admin']",
+        "username": "input[placeholder='Username']",
+        "password": "input[placeholder='Password']",
+        "loginBtn": "button[type='submit']"
+    }
+}

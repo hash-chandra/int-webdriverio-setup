@@ -1,15 +1,9 @@
 import openPage from './page.js';
-
-const locators = {  
-    dashboardLink: "//span[normalize-space()='Admin']",
-    username: "input[placeholder='Username']",
-    password: "input[placeholder='Password']",
-    loginBtn: "button[type='submit']"
-};
+import data from './locators/allLocators.json' with {type:"json"};
 
 async function isLoggedin() {
-    await $(locators.dashboardLink).waitForDisplayed();
-   return (await $(locators.dashboardLink)).isDisplayed();
+    await $(data.orangeLogin.dashboardLink).waitForDisplayed();
+   return (await $(data.orangeLogin.dashboardLink)).isDisplayed();
 }
 
 async function openLoginPage() {
@@ -17,9 +11,9 @@ async function openLoginPage() {
 }
 
 async function login(username, password) {
-    await $(locators.username).setValue(username);
-    await $(locators.password).setValue(password);
-    await $(locators.loginBtn).click();
+    await $(data.orangeLogin.username).setValue(username); 
+    await $(data.orangeLogin.password).setValue(password);
+    await $(data.orangeLogin.loginBtn).click();
 }
 
 export {  isLoggedin, openLoginPage, login };
