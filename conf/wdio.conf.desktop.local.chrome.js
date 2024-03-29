@@ -13,11 +13,15 @@ export const config = {
       // Use the following setting to run tests on Chrome mobile locally.
       // Useful for debugging.
       'goog:chromeOptions': {
-        excludeSwitches: ['enable-automation'],
-        //  mobileEmulation: {
-        //     "deviceMetrics": { "width": 360, "height": 640, "pixelRatio": 3.0 },
-        //     "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/537.36"
-        //   }
+        args: [
+          'no-sandbox',
+          'disable-infobars',
+          'disable-extensions',
+          'disable-dev-shm-usage',
+          // Comment the following options to view the browser while running tests
+          'disable-gpu',
+          'headless',
+        ],
       },
     },
   ],
