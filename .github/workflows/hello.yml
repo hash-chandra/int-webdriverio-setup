@@ -2,6 +2,10 @@ on:
     push:
       branches:
         - main
+env:
+        MYNAME: "Chandra"
+        MYCITY: "Hyderabad"
+
 jobs:
     helloOne:
       runs-on: ubuntu-latest
@@ -9,4 +13,4 @@ jobs:
         - name: checkout code
           uses: actions/checkout@v3
         - name: execute a command
-          run: echo "Hello, world!"
+          run: echo "Hello, world!" && echo {{ env.MYNAME }} from {{ env.MYCITY }}
