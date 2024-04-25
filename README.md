@@ -1,5 +1,7 @@
 # BOILERPLATE WEBDRIVERIO
 
+[![publish to docker](https://github.com/hash-chandra/int-webdriverio-setup/actions/workflows/dockpush.yml/badge.svg)](https://github.com/hash-chandra/int-webdriverio-setup/actions/workflows/dockpush.yml)
+
 ## Installing/ Getting Started
 
 To set this WebdriverIO boilerplate project, you can follow these steps
