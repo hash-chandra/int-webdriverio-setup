@@ -4,7 +4,6 @@ import { config as configBase } from './wdio.conf.js';
 export const config = {
   ...configBase,
   browserName: 'firefox',
-  browserVersion: '120.0',
   capabilities: [
     {
       maxInstances: 1,
