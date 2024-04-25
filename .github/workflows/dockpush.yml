@@ -7,7 +7,7 @@ jobs:
         steps:
             - name: checkout code
               uses: actions/checkout@v3
-            - name: login to docker
+            - name: login to ghcr
               uses: docker/login-action@v2
               with:
                 registry: ghcr.io
